@@ -1,0 +1,282 @@
+:root{
+    --main:rgb(169,169,169);
+    --second:rgb(144,144,144);
+    --text:rgb(121, 121, 121);
+    --background:rgb(232,232,232);
+
+}
+*{
+    position: relative;
+    color: var(--text);
+}
+.container {
+    width: inherit;
+    height: 87vh;
+    width: 27vw;
+    background-color: white;
+    position: relative;
+}
+.PICTURE {
+    display: flex;}
+
+.PICTURE>img{
+    background-color: var(--main);
+    z-index: 10000;
+    position: relative;
+    right: 0vw;
+    width: 8.8vw;
+    height: 11vh;
+    border-bottom-left-radius: 50px 50px;
+    border-right: 3px solid var(--second);
+    border-bottom-left-radius: 40px 40px;
+}
+.photo{
+    margin-left:0;
+    border-bottom-left-radius: 0px 0px;
+}
+
+.Body div , .left-body div{
+    font-size: 9px;
+}
+.banners-div{
+    display: flex;
+    margin-left: 0.3vw;
+    margin: 1vh 0;
+}
+.banners{
+    background-color: var(--second) ;
+    color: white;
+    padding: 3px;
+    margin: 0.9vh 0 0 0.8vh;
+}
+.right-body .main , .contact{
+    width: 7vw;
+}
+.banners{
+    font-size: 10px;
+}
+.Education-output .main , .Employment-output .main , .profile-banner , .Internship-output .main  ,.Extra-output .main,.Achievement-output .main , .Certificate-output .main{
+    
+    width: 16vw;
+}
+.right-body>.banners-div{
+    font-size: 14.99px;
+    /* margin-bottom: 1.1vh; */
+}
+
+.Education-output>.banners-div>.banners , .Employment-output>.banners-div>.banners ,
+.Profile-output .banners , .Internship-output .banners  , .Extra-output .banners , .Achievement-output .banners , .Certificate-output .banners
+{
+    background-color: var(--background);
+    color: var(--text);
+}
+.names {
+    /* margin-top: -4vh; */
+    display: flex;
+    font-size: 30px;
+    margin-bottom: 2px;
+    color: var(--text);
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+h4{
+    display: none;
+}
+i{
+    background-color: var(--second);
+    padding: 3.5px;
+    border-radius: 50%;
+    -webkit-text-stroke-width: 0.45px;
+    -webkit-text-stroke-color: rgb(255, 255, 255);
+}
+.skills-output .output {
+    width: 80%;
+    height: 0.3rem;
+    background-color: var(--text);
+    border-radius: 2px;
+}
+.skills-output , .Hobbies , .title-output , .title , .names{
+    position: relative;
+}
+
+#skillrange1 ,#skillrange2 , #skillrange3 ,#langrange1 ,#langrange2,#langrange3  {
+    height: inherit;
+    width: 75%;
+    /* background-color: aqua; */
+    background-color:rgb(255, 255, 255);
+    border-radius: 2px;
+}
+.names {
+    position: relative;
+    display: flex;
+    font-size: medium;
+    margin-bottom: 2px;}
+.fname {
+    margin-right: 2.5px;}
+.second {
+    margin-left: 2.5px;}
+.headline {
+    font-size: x-small;}
+.details-container{
+    display: flex;
+}
+.details {
+    display: flex;
+    flex-direction: column;
+    font-size: 8px;
+}
+.header{
+    width: 9vw;
+    position: relative;
+min-height:31vh;
+
+    /* float:unset; */
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+
+}
+.header-container{
+    background-color: var(--background);
+    border-radius: 5px;
+
+    /* position: absolute; */
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+}
+.F-L-Name {
+    color: white;
+    font-size: large;
+    margin-bottom: 5px;
+position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.details div {
+    margin: 2.5px;}
+.Body {
+    display: flex;
+    width: initial;
+    height: fit-content;
+    margin: 5px;
+
+}
+.left-body {
+    height: inherit;
+    width: 65%;
+    padding: 5px;
+    position: absolute;
+    top: -13vh;
+    margin-right: -0.8vw;
+    margin-top: -19vh;
+    right: 0;
+}
+.right-body {
+    height: inherit;
+    height: 56.8vh;
+    
+    width: 8.94vw;
+    background-color: var(--background);
+    margin-top:-3.5vh;
+    margin-left: -0.278vw;
+    padding: 0 0 2vh 0;
+    border-radius: 5px;
+}
+#PDtitle{
+    margin-top: 0;
+}
+.list{
+    display: flex;
+    justify-content: space-between;
+}
+/* .header-container .banners-div{
+    display: none;
+} */
+.Body hr {
+    display: none;
+}
+.p-details-output{
+    display: flex;
+}
+.p-details-output .title-output{
+    width: 5vw;
+    
+}
+.p-details-output h4 , .HEADTITLE{
+    margin: 5px;
+    margin-right: 0;
+    font-size: 0.7rem;}
+.output , .title{
+    margin-top: 2.5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    color: rgb(109, 100, 100);
+    font-size: 0.5rem;}
+.title {
+    color: black;
+}
+h5 {
+    margin-right: 5px;
+}
+.Fixed-education {
+    font-size: 0.5rem;
+}
+.Headers h4 , h5 , h6{
+    font-weight: 400;
+}
+.Headers {
+    margin-bottom: 1px;
+}
+.Sch-Cit-Date {
+    display: flex;
+    justify-content: space-between;
+    margin: 1px;
+    margin-left: 0;
+}
+.SCNAME {
+    display: flex;
+    margin: 1px;
+    margin-left: 0;
+}
+h6 {
+    display: flex;
+}
+.outhead {
+    font-size: 0.7rem;
+    margin-bottom: 7.5px;
+}
+.outhead:not(#EDU-title) {
+    margin-top: 7.5px;
+}
+.desc {
+    color: gray;
+}
+
+.skill {
+    margin-left: 5px;
+    padding: 0;
+}
+.range {
+    height: inherit;
+    width: 75%;
+    background-color: white;
+}
+.Hobbies {
+    margin-top: 8px;
+}
+#cert-date-name {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+h4{
+    display: none !important;
+}
+/* .right-body{
+    display: block;
+} */

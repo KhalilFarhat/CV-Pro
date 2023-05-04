@@ -1,0 +1,105 @@
+header{
+  margin: 0;
+  padding-bottom: 10px;
+  background-color: var(--main-color);
+  width:100%;
+  position: relative;
+}
+body {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+  background-color: #e0e5eb;
+  max-width: 100%;
+}
+header>a>img{
+  position: absolute;  
+  height: 30px;
+  left: 40px;
+  top: 40px;
+}
+a>img {
+  color: #fff;
+  cursor: pointer;
+}
+.container{
+  display: flex;
+  justify-content: space-around;
+}
+.img{
+  position: relative;    
+  height: 400px;
+  animation:float 2s linear infinite;
+}
+@keyframes float{
+    0%, 100%{
+    transform: translateY(0rem);
+    }
+    50%{
+    transform: translateY(0.5rem);
+    }
+}
+h1 {
+  font-size: 40px;
+  font-weight: bolder;
+  padding: 30px 10px 10px 10px;
+  margin-left: 80px;
+  color: #e0e5eb;
+  } 
+h1, h2 {
+  font-weight: bold;
+}
+h2 {
+  font-size: 21px;
+  margin-top: 20px;
+  color: var(--main-color);
+}
+p {
+  margin-top: 10px;
+  font-size: large;
+  color: var(--second-color);
+  text-align: justify;
+}
+#box{
+margin-left: 70px;
+width: 50%;
+}
+/* button animation */
+button {
+    margin-left: 41%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: none;
+    cursor: pointer;
+    width: 150px;
+    height: 50px;
+    background-image: linear-gradient(to top, #D8D9DB 0%, #fff 80%, #FDFDFD 100%);
+    border-radius: 30px;
+    border: 1px solid #8F9092;
+    transition: all 0.2s ease;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: #606060;
+    text-shadow: 0 1px #fff;
+    margin-left: 45.1%;
+  }
+  
+button:hover {
+  box-shadow: 0 4px 3px 1px #FCFCFC, 0 6px 8px #D6D7D9, 0 -4px 4px #CECFD1, 0 -6px 4px #FEFEFE, inset 0 0 3px 3px #CECFD1;
+}
+  
+button:active {
+  box-shadow: 0 4px 3px 1px #FCFCFC, 0 6px 8px #D6D7D9, 0 -4px 4px #CECFD1, 0 -6px 4px #FEFEFE, inset 0 0 5px 3px #999, inset 0 0 30px #aaa;
+}  
+button:focus {
+  box-shadow: 0 4px 3px 1px #FCFCFC, 0 6px 8px #D6D7D9, 0 -4px 4px #CECFD1, 0 -6px 4px #FEFEFE, inset 0 0 5px 3px #999, inset 0 0 30px #aaa;
+}
+a{
+  text-decoration: none;
+}
+@media screen and (width<=1270px) {
+  .img {display: none;}
+}
