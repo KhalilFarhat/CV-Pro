@@ -122,7 +122,7 @@ function redirectToLogin() {
     <div class="head-top">
         <!-- <a href="template_login_portal.html"><button class="head-btns signup-btn openModalBtns" id="signupbtn">Sign Up</button> </a> -->
         <!-- <a href="template_login_portal.html"><button class="head-btns login-btn openModalBtns" id="loginbtn"> Account</button> -->
-        <a href="login_signup_portal.html"><button class="head-btns login-btn openModalBtns" id="loginbtn" style="padding: 3px;width: 5vw;font-weight: bold;">Account</button></a></a>
+        <a href="login_signup_portal.html"><button class="head-btns login-btn openModalBtns" id="loginbtn" style="padding: 3px;min-width: 6vw;font-weight: bold;">Account</button></a></a>
 
 </div>
         <div class="title">

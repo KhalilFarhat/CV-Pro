@@ -28,7 +28,7 @@
         <form method="post" id="myform" action="template.php"  class="Left-side"  enctype="multipart/form-data" > 
             <div class="container-1">
             <div class="first-row">
-                    <button onclick="Pdet()" class="btn-1" id="PDet-btn">Personal details</button>
+                    <button onclick="Pdet()" class="btn-1" id="PDet-btn">Personal Details</button>
                     <div style="display: flex;">
                         <div id="detdrop" class="dropdown-content">
                             <a onclick="detclear()">Clear Section</a>

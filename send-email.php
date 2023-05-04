@@ -32,6 +32,6 @@ $message = "Name: " . $name . "\n\nEmail: " . $email . "\n\nMessage: " . $messag
 $mail->Body = $message;
 $mail->send();
 
-header("Location: sent.html");
+header("Location:sent.html");
 
 ?>

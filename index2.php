@@ -38,7 +38,9 @@ if (x.type === "password" || x2.type === "password") {
 <style>
     #welcome-message{
     position: absolute;
-    right: 0;
+    right:0;
+    color: black;
+    text-shadow: none;
     }
     </style>
 </head>

@@ -1,40 +1,52 @@
-//show/hide password
-const passwordInput = document.querySelector('input[type="password"]');
-const showPasswordButton = document.getElementById('show-password');
-const hidePasswordButton = document.getElementById('hide-password');
+const passwordInputLogin = document.querySelector('input[name="password"]');
+const showPasswordButtonLogin = document.getElementById('hide-password');
+const hidePasswordButtonLogin = document.getElementById('show-password');
 
-const passwordInputs = document.querySelector('password-input_s');
-const showPasswordButtons = document.getElementById('show-password_s');
-const hidePasswordButtons = document.getElementById('hide-password_s');
+hidePasswordButtonLogin.style.display = 'none';
+showPasswordButtonLogin.style.display = 'block';
 
-// hidePasswordButton.style.display = 'none';
-// showPasswordButton.style.display = 'block';
-
-hidePasswordButton.addEventListener('click', function() {
-  passwordInput.setAttribute('type', 'password');
-  hidePasswordButton.style.display = 'block';
-  showPasswordButton.style.display = 'none';
-});
-showPasswordButton.addEventListener('click', function() {
-  passwordInput.setAttribute('type', 'text');
-  showPasswordButton.style.display = 'block';
-  hidePasswordButton.style.display = 'none';
+hidePasswordButtonLogin.addEventListener('click', function() {
+  passwordInputLogin.setAttribute('type', 'password');
+  hidePasswordButtonLogin.style.display = 'none';
+  showPasswordButtonLogin.style.display = 'block';
 });
 
-hidePasswordButtons.click(function() {
-  passwordInput.setAttribute('type', 'password');
-  hidePasswordButton.style.display = 'block';
-  showPasswordButton.style.display = 'none';
-  console.log("vfgvbg");
-
+showPasswordButtonLogin.addEventListener('click', function() {
+  passwordInputLogin.setAttribute('type', 'text');
+  showPasswordButtonLogin.style.display = 'none';
+  hidePasswordButtonLogin.style.display = 'block';
 });
-showPasswordButtons.addEventListener('click', function() {
-  passwordInput.setAttribute('type', 'text');
-  showPasswordButton.style.display = 'block';
-  hidePasswordButton.style.display = 'none';
-  console.log("show");
 
+const passwordInputSignup = document.getElementById('password-input');
+const showPasswordButtonSignup = document.getElementById('hide-password_s');
+const hidePasswordButtonSignup = document.getElementById('show-password_s');
+
+hidePasswordButtonSignup.style.display = 'none';
+
+hidePasswordButtonSignup.addEventListener('click', function() {
+  passwordInputSignup.setAttribute('type', 'password');
+  hidePasswordButtonSignup.style.display = 'none';
+  showPasswordButtonSignup.style.display = 'block';
 });
+
+showPasswordButtonSignup.addEventListener('click', function() {
+  passwordInputSignup.setAttribute('type', 'text');
+  showPasswordButtonSignup.style.display = 'none';
+  hidePasswordButtonSignup.style.display = 'block';
+});
+
+// Remove readonly attribute when the input field is focused
+passwordInputSignup.addEventListener('focus', function() {
+  this.removeAttribute('readonly');
+});
+
+passwordInputLogin.addEventListener('focus', function() {
+  this.removeAttribute('readonly');
+});
+
+
+
+
 
 
 const sign_in_btn = document.querySelector("#sign-in-btn");

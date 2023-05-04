@@ -55,6 +55,7 @@ strong {
     background-color: var(--main-color);
     color: white;
     /* height: 4vh; */
+    min-width: 5vw;
     padding: 8px;
     padding-bottom: 7px ;
     border: none;
