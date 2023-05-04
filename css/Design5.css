@@ -1,0 +1,328 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+    width: inherit;
+    /* height: 91vh; */
+    /* width: 25vw; */
+    background-color: white;
+    position: relative;
+}
+h4{
+    display: none !important;
+}
+.PICTURE {
+    display: flex;
+}
+.PHOTO-FLNAME{
+    display: flex;
+    justify-content: flex-start;
+}
+.PICTURE>img{
+    width: 55px;
+    height: 55px;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    border-radius: 8%;
+    border: 4px solid white;
+    outline: 4px solid white;
+    outline-offset: 7px;
+    margin-top: 1.5vh;
+    margin-left: 0.7vw;
+    margin-right: 1.5vw;
+    margin-bottom: 2vh;
+}
+.left-body div{
+    position: relative;
+}
+i{
+    display: none;
+}
+.Body hr{
+    display: none;
+}
+.right-body .main{
+    background-color:rgb(203, 77, 77);
+    color: white;
+    font-size: 13.4px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 2px 14px 4px 5px;
+    width: 7.5vw;
+    /* position: absolute; */
+    /* right: -0.5vw; */
+} 
+/* .title-output:nth-child(4),.title-output:nth-child(5){
+    margin-left: -5.2vw;
+    
+} */
+
+.names {
+    display: flex;
+    font-size: 20px;
+}
+.fname {
+    margin-right: 2.5px;}
+.second {
+    margin-left: 2.5px;}
+
+#second {
+    margin-left: 0.5vw;
+}
+.right-body2{
+    display: none;
+}
+.right-body{
+    display: flex;
+    flex-direction: column;
+    margin-right: -2vw;
+    margin-top: 2vh;
+    /* width: 10vw; */
+}
+.skills-output {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    font-size: 12px;
+}
+
+.skills-output .output {
+    width: 6vw;
+    height: 0.3rem;
+    background-color: rgb(203, 77, 77);
+    border-radius: 2px;
+    margin-right: 1vw;
+}
+.skills{
+    margin-right: 1.3vw;
+}
+.skill {
+    /* margin-right: 1.5vw; */
+    padding: 0;
+    border-radius: 2px;
+
+}
+.language{
+    margin-right: 1.3vw;
+}
+
+#skillrange1 ,#skillrange2 , #skillrange3 ,#langrange1 ,#langrange2,#langrange3  {
+    height: inherit;
+    width: 75%;
+    /* background-color: aqua; */
+    background-color:rgb(188, 185, 185);
+    border-radius: 2px;
+}
+.headline {
+    font-size: x-small;}
+
+.details-container{
+    display: flex;
+    flex-direction: column;
+    font-size: 6px;
+    position: absolute;
+    padding: 7vh 16px 16px;
+    height: 4.6vh;
+    width: 6.5vw;
+    justify-content: center;
+    right: 0;
+    top: 0;
+    letter-spacing: 0.75px;
+    background-color:rgb(203, 77, 77);
+    color: white;
+}
+.details {
+    font-size: 7.5px;
+    display: flex;
+    flex-direction: column;
+    /* background-color: green; */
+    width: 8vw;
+    margin-left: -1vw;
+    margin-top: -1vh;
+    padding: 5px;
+    color: var(--text);
+}
+.header {
+    background-color: rgb(123, 123, 123);
+    height: fit-content;
+    padding: 5px;
+    width: 14.4vw;
+    /* position: relative; */
+}
+.F-L-Name {
+    color: white;
+    /* color: black; */
+    font-size: large;
+    margin-bottom: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-weight: bolder;
+
+}
+.details div {
+    margin: 2.5px;
+}
+.Body {
+    display: flex;
+    justify-content: space-between;
+    width: initial;
+    height: fit-content;
+    margin: 5px;
+    margin-top: 2vh;
+    position: relative;
+
+}
+.left-body {
+    height: inherit;
+    width: 15.2vw;
+    padding: 5px;
+    margin-right: 0.4vw;
+    margin-top: -2.4vh;
+    position: relative;
+
+}
+.left-body div{
+    position: relative;
+}
+.right-body {
+    height: inherit;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    margin-top: -2vh;
+    margin-left: -1.5vw;
+    padding: 5px;
+}
+.list{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 2vw;
+    margin-left: 1vw;
+}
+ol li{
+    font-size: 12px;
+    margin-top: 0.4vh;
+}
+/* .skills-output{
+    display: block; */
+/* } */
+.skills-output2{
+    display: none;
+}
+.p-details-output2{
+    display: none;
+}
+h4{
+    display: none;
+}
+.p-details-output{
+    margin-top: 0.5vh;
+    width: 10vw;
+    display: flex;
+    /* flex-direction: column; */
+
+    /* position: absolute; */
+    /* margin-left: -3vh; */
+}
+.p-details-output .details-content{
+    /* display: flex; */
+    /* flex-direction: column; */
+}
+.p-details-output h4 {
+    margin: 5px;
+    margin-right: 0;
+    font-size: 0.7rem;}
+.output , .details-content .title{
+    margin-top: 2.5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    color: black;
+    font-size: 0.5rem;
+}
+.details-content .title {
+    color: rgb(109, 100, 100);
+}
+.p-details-output>.details-content{
+    position: relative;
+    width: 5.25vw;
+}
+.title-output {
+    margin: 2.5px;
+    margin-bottom: 7.5px;
+    margin-left: 0;
+}
+h5 {
+    margin-right: 5px;
+}
+.Fixed-education {
+    font-size: 0.5rem;
+    /* position: relative; */
+    /* margin-top: 0.7vh; */
+    margin-right: 2vw;
+    width: 13vw;
+}
+.Headers h4 , h5 , h6{
+    font-weight: 400;
+}
+.Headers {
+    margin-bottom: 1px;
+    position: relative;
+}
+.Headers div{
+    position: relative;
+}
+.Sch-Cit-Date {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    margin: 1px;
+    margin-left: 0;
+}
+.SCNAME {
+    display: flex;
+    margin: 1px;
+    margin-left: 0;
+}
+h6 {
+    display: flex;
+}
+.left-body .banners-div .main {
+    background-color: rgb(123, 123, 123);
+    color: white;
+    font-size: 12.4px;
+    padding: 2px 14px 4px 5px;
+    width: 13.9vw;
+    /* top: 16.7vh; */
+    /* left: 0; */
+    /* position: absolute; */
+    position: relative;
+    margin-top: 0.5vh;
+    margin-left: -0.75vw;
+
+}
+.banners-div .main{
+    border-radius: 2px;
+
+}
+.edudesc {
+    color: gray;
+}
+.contact{
+    position: absolute;
+    top: 0.5vh;
+    right: 0.7vw;
+    color: white;
+    display: flex;
+    justify-content: center;
+    z-index: 1000;
+    width: 6.8vw;
+}
+.personal , .skills , .p-details-output{
+    position: relative;
+}
+i{
+    display: none;
+}

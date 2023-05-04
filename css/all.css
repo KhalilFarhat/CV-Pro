@@ -1,0 +1,53 @@
+:root {
+    --main-color: #72a3be;
+    --primary-color: rgb(99, 133, 152);
+    --second-color: #507985;
+    --additional:#B7977A;
+    --background:#e0e5eb;
+}
+*{
+    margin: 0;
+    padding: 0;
+    cursor: default;
+    scroll-behavior:smooth;
+}
+span {
+    color: var(--second-color);
+}
+body{
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Standard */
+    overflow-x:hidden;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+a , button {
+    cursor: pointer;
+}
+#back-to-top-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999;
+    background-image: url('resources/images/back_to_top_button.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: rgb(35, 47, 73);
+    width: 55px;
+    height: 55px;
+    border: none;
+    border-radius: 37.5px;
+    overflow: hidden;
+    cursor: pointer;
+    opacity: 0;
+}
+.copyrights{
+    display: flex;
+    background-color: var(--main-color);
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    bottom: 0;
+}
