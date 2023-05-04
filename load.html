@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js" ></script>
+    <link rel="stylesheet" href="css/all.css">
+    <title>Home | CVpro</title>
+    <link rel="stylesheet" href="load.css">
+</head>
+<body>
+    <header>
+        <a href="#" onclick="javascript:history.back()">
+            <img id="home_logo" src="resources/images/logo_white.png" alt="" >
+            </a>
+        <h1>Admin Page</h1>
+    </header>
+    <!-- Table to display records -->
+	<table>
+		<thead>
+			<tr>
+                <th>id</th> 
+                <th>image</th> 
+                <th>First_Name</th>
+                <th>Last_Name</th>
+                <th>Email</th>
+                <th>phone_number</th>
+                <th>address</th>
+                <th>P_Code</th>
+                <th>City_input</th>
+                <th>DateOB</th>
+                <th>PlaceOB</th>
+                <th>License</th>
+                <th>gender</th>
+                <th>nationality</th>
+                <th>civil_status</th>
+                <th>linkin</th>
+                <th>website</th>
+                <th>education</th>
+                <th>school</th>
+                <th>city</th>
+                <th>Edu_start</th>
+                <th>Edu_end</th>
+                <th>Description</th>
+                <th>Position</th>
+                <th>employer</th>
+                <th>emp_city</th>
+                <th>emp_Description</th>
+                <th>skill1</th>
+                <th>skill1_range</th>
+                <th>lang1</th>
+                <th>lang1_range</th>                <th>skill2</th>
+                <th>skill2_range</th>
+                <th>lang2</th>
+                <th>lang2_range</th>
+                <th>skill3</th>
+                <th>skill3_range</th>
+                <th>lang3</th>
+                <th>lang3_range</th>
+                <th>hobby1</th>
+                <th>hobby2</th>
+                <th>hobby3</th>
+
+                <th>Profile_Description</th>
+                <th>Internships_position</th>
+                <th>Internships_employer</th>
+                <th>Internships_city</th>
+                <th>Internships_Edu_start</th>
+                <th>Internships_Edu_end</th>
+                <th>Internships_Description</th>
+                <th>extra_position</th>
+                <th>extra_employer</th>
+                <th>extra_city</th>
+                <th>extra_Edu_start</th>
+                <th>extra_Edu_end</th>
+                <th>extra_Description</th>
+                <th>AchDescription</th>
+                <th>Certificate_position</th>
+                <th>Certificate_end</th>
+                <th>Certificate_Description</th>
+
+			</tr>
+		</thead>
+		<tbody id="table-data">
+			<!-- Table data will be populated by AJAX -->
+		</tbody>
+	</table>
+
+
+	<script>
+		$(document).ready(function() {
+			// Function to load table data using AJAX
+			function loadTableData() {
+				$.ajax({
+					url: "load.php",
+					type: "GET",
+					success: function(data) {
+						$("#table-data").html(data);
+					}
+				});				
+			}
+
+			// Call function to load table data when page is loaded
+			loadTableData();
+        });
+    </script>
+</body>
+</html>
