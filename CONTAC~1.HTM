@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact Us | CVpro</title>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/x-icon" href="resources/images/CvLogo.png">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css"> -->
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/contact_us.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="/javascript/contact_us.js"defer></script>
+    <script src="/javascript/main.js" defer></script>
+    <style>
+    label{
+    color: var(--main-color);
+    }
+    form,body{
+    background-color: #e0e5eb;
+    }
+    header{
+    color: #e0e5eb;
+    }
+    </style>
+        <script>
+        window.onbeforeunload = function() {
+            return "Are you sure you want to leave this page?";
+        };
+        </script>
+</head>
+
+<body>
+    <header>
+        <a href="#" onclick="javascript:history.back()">
+        <img src="resources/images/logo_white.png" alt="" >
+        </a>
+        <h1>Contact Us</h1>
+        <p style="margin-left: 90px;font-weight: bolder;margin-top: -4vh;" >We'd love to hear from you! Whether you have questions, feedback, or bug reports, our team is here to help. Please fill out the form below and we'll get back to you as soon as possible.</p>
+    </header>
+<div class="container">
+    <form method="post" action="send-email.php" id="contact-form">
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" required>
+        
+        <label for="subject">Subject:</label>
+        <input type="text" name="subject" id="subject" required>
+        
+        <label for="message">Message:</label>
+        <textarea name="message" id="message" required></textarea>
+        
+        <!-- <br> -->
+        <div class="check">
+        <div class="back-button">
+            <a href="#" onclick="javascript:history.back()">Back</a>
+        </div>
+        <button id="submit-btn" type="submit" class="btn btn-primary" disabled>Send</button><br>
+        
+        <p><button id="toggle" type="button" class="btn-success">Click To Verify You Are Not A Robot!</button></p>      
+        <div class="circle-loader">
+            <div class="checkmark draw"></div>
+        </div>
+        <label for="allow"style="display:none;">
+            <input type="checkbox" id="allow">
+            I am a human
+        </label>
+        </div>
+    </form>
+    <div class="img">
+        <img src="resources/images/contactus.png" alt="" srcset="">
+    </div>
+</div>
+    <section class="copyrights">
+        <p style="color: white;">Copyright &copy; 2023 All Rights Reserved</p>
+    </section>
+
+    <script>
+        const form = document.getElementById('contact-form');
+        const submitBtn = document.getElementById('submit-btn');
+        const allowCheckbox = document.getElementById('allow');
+        const name = document.getElementById('name');
+        const email = document.getElementById('email');
+        const subject = document.getElementById('subject');
+        const message = document.getElementById('message');
+
+        allowCheckbox.addEventListener('change', (event) => {
+            submitBtn.disabled = !event.target.checked;
+        });
+
+        form.addEventListener('submit', (event) => {
+            if (!allowCheckbox.checked) {
+                event.preventDefault();
+                alert('Please click "Are You A Human?" before submitting the form.');
+            } else if (name.value === '' || email.value === '' || subject.value === '' || message.value === '') {
+                event.preventDefault();
+                alert('Please fill all the required fields before submitting the form.');
+            }
+        });
+
+        $('#toggle').click(function() {
+    const allowCheckbox = document.getElementById('allow');
+    allowCheckbox.checked = !allowCheckbox.checked;
+    submitBtn.disabled = !allowCheckbox.checked;
+    $('.circle-loader').toggleClass('load-complete');
+    $('.checkmark').toggle();
+});
+    </script>
+<footer>
+    <section class="copyrights">
+        <p style="color: white;font-weight: bolder;">Copyright &copy; 2023 All Rights Reserved</p>
+        </section>   
+    </footer>
+</body>
+</html>

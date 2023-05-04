@@ -1,0 +1,292 @@
+*{
+    margin: 0;
+    padding: 0;}
+body {
+    overflow-y: hidden;}
+.Left-side .dots {
+    margin-right: 0;
+    margin-left: 0;
+    padding-left: 0;
+    padding-right: 0;
+    font-size: large;
+    border: none;
+    cursor: pointer;}
+.Left-side button {
+    border-radius: 4px;
+    background-color: transparent;
+    border: 1px solid gray;
+    padding: 3px;
+    padding-left: 6px;
+    padding-right: 6px;
+    font-size: 15px;
+    height: fit-content;
+    width: fit-content;
+    cursor: pointer;}
+.first-row {
+    position: relative;
+}
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content {
+    display: none;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 5%;
+    right: 10%;
+    background-color: #f1f1f1;
+    min-width: inherit;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+.show {
+    display: block;
+}
+.dropdown-content a:hover {
+    background-color: #ddd;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 1300px) {
+    .Right-side {
+        display: none;
+    }
+    .Left-side {
+        width: 100%;
+    }
+}
+.extra {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;}
+label {
+    margin: 5px;}
+button {
+    margin: 5px;}
+input {
+    padding: 7px;
+    height: 8px;}
+input[type=range] {
+    padding: 0;}
+header {
+    display: flex;
+    text-align: center;
+    height: 60px;
+    background-color: black;
+    color: white;
+    align-items: center;
+    justify-content: space-between;}
+.photo > button{
+    cursor: pointer;
+    width: 140px;
+    height: 140px;
+    background-color: gray;
+    border: none;
+    border-radius: 5px;}
+.btn-2 {
+    padding: 3.5px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px !important;
+    height: 30px !important;
+    border: 1px solid #d3d3d3;
+    color: #636262;}
+.input {
+    display: grid;
+    margin: 5px;
+    width: -webkit-fill-available;}
+.optional {
+    margin: 10px 0;}
+.Name {
+    display: grid;
+    width: inherit;
+    margin: 5px;}
+.Left-side , .Right-side{
+    width: 50%;
+    height: 90vh;
+    padding: 5px;
+    overflow-y: scroll;}
+.Right-side {
+    display: flex;
+    align-items: center ;
+    background-color: rgb(219, 218, 218);
+    flex-direction: column;
+    justify-content: center;
+    }
+.details {
+    color: white;}
+.child {
+    padding: 10px;}
+.btn-2:hover {
+    background-color:rgba(211, 190, 190, 0.6)}
+.first-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;}
+.first-row button{
+    font-family: popins,'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight:600;
+    background-color: transparent;
+    color: #3e3e3e;}
+.first-row .btn-1 {
+    width: 200px;
+    height: 30px;
+    border: none;
+    font-size: 1.3rem;
+    text-align: start;}
+.first-row .btn-2 {
+    width: 30px;
+    height: 30px;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 7px;
+    border: 1px solid black;
+    transition: all 0.1s ease-in-out;
+    border: 1px solid #d3d3d3;
+    color: #636262;}
+.box , .Summary-box{
+    border: 1px solid rgb(217, 217, 217);
+    padding: 10px;
+    margin: 3px;}
+.Summary-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;}
+.optional button:hover {
+    background-color: rgba(211, 190, 190, 0.6);
+    transition: all 0.2 ease-in-out;}
+textarea {
+    resize: none;
+    padding: 5px;}
+
+
+
+
+
+
+.Left-side input ,
+.Left-side textarea {
+    padding: 11px;
+    border: 1px solid #dfdfdf;
+    background-color: #f8f8f8;
+    border-radius: 2px;}
+
+.download{
+    background-color: rgb(243, 241, 241);
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.download>i {
+    color: black;
+}
+input[type="submit"]{
+    padding: 0;
+    margin: 0;
+}
+input[type="submit"],button {
+    cursor: pointer;
+}
+input[type=submit], .dnbtn {
+    background-color: transparent;
+    border: none;
+}
+.Left-side .photo {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    width: 12vw;
+    height: 20vh;
+    border-radius: 3px;
+    background-color: #dfdfdf65;
+    border: none;
+}
+.Left-side .photo input {
+    position: relative;
+    cursor: pointer;
+    opacity: 0.0;
+    width: 8.5vw;
+    height: 20vh;
+    filter: alpha(opacity=0);
+    padding: 0;
+}
+.Left-side img {
+    position: absolute;
+    width: 10vw;
+    height: 20vh;
+}
+.Left-side .photo input {
+    position: relative; 
+    cursor: pointer;
+    opacity: 0.0;
+    width: 8.5vw;
+    height: 20vh;
+    filter: alpha(opacity=0); 
+    padding: 0;}
+.Left-side .container-1{
+    margin: 10px 20px;}
+.Left-side hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    background-color: #e4e4e7;
+    margin: 0.2em 0;
+    padding: 0;}
+
+
+.buttons {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.buttons button,
+.optional button,
+#edudone,
+#empdone,
+.Skills button,
+.Languages button,
+.Hobbies button {
+    padding: 8px;
+    border: 1px solid #d3d3d3;
+    color: #636262;
+}
+.optional button {
+    margin-top: 10px;
+}
+#edudone,
+#empdone {
+    padding: 5px;
+}
+.buttons button:hover,
+.optional button:hover,
+#edudone:hover,
+#empdone:hover,
+.Skills button:hover,
+.Languages button:hover,
+.Hobbies button:hover,
+.btn-2:hover, #intdone:hover, #extdone:hover, #certdone:hover {
+    border: 1px solid rgb(156, 156, 233);
+    background-color: #ebebebd4;
+}
+.Titled-resume {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    color: #f2f2f4;
+    font-size: 1.2rem;
+}
+.container {
+    width: inherit;
+    height: fit-content;
+    background-color: white;
+}
